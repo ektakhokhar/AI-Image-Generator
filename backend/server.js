@@ -1,9 +1,16 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const cors = require('cors');  // <-- import cors
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for your frontend domain (GitHub Pages)
+app.use(cors({
+  origin: 'https://ektakhokhar.github.io',  // your frontend URL here
+  methods: ['GET', 'POST'],
+}));
 
 // Parse JSON request bodies
 app.use(express.json());
