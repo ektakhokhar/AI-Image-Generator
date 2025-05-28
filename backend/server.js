@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json());
 
 // Serve static frontend files
-const frontendPath = path.join(__dirname, '../frontend');
+const frontendPath = path.join(__dirname, '../docs');
 app.use(express.static(frontendPath));
 
 // Serve index.html for root route
