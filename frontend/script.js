@@ -78,7 +78,7 @@ const generateImages = async (selectedModel, imageCount, aspectRatio, promptText
   generateBtn.setAttribute("disabled", "true");
 
   try {
-    const response = await fetch('/generate-image', {
+    const response = await fetch('https://ai-image-generator-1zgx.onrender.com/generate-image', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
