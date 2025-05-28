@@ -8,7 +8,6 @@ const ratioSelect = document.getElementById("ratio-select");
 const gridGallery = document.querySelector(".gallery-grid");
 const promptBtn = document.querySelector(".prompt-btn");
 
-/*const API_KEY = "hf_KBBDHJbERYrsvLwxJceSEwxwXAPBWAfS"; // Your Hugging Face API key (backend should use this, not frontend)*/
 
 const examplePrompts = [
   "A magic forest with glowing plants and fairy homes among giant mushrooms",
