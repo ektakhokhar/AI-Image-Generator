@@ -8,9 +8,14 @@ const PORT = process.env.PORT || 3000;
 
 // Enable CORS for your frontend domain (GitHub Pages)
 app.use(cors({
-  origin: 'https://ektakhokhar.github.io',  // your frontend URL here
+  origin: [
+    'https://ektakhokhar.github.io',    // for production
+    'http://localhost:10000',           // for local testing
+    'http://127.0.0.1:10000',           // alternative localhost
+  ],
   methods: ['GET', 'POST'],
 }));
+
 
 // Parse JSON request bodies
 app.use(express.json());
